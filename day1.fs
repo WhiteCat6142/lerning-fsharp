@@ -1,5 +1,9 @@
 open System
 
+(*See
+http://shingetsu.ygch.net/thread.cgi/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80/99fb6418
+*)
+
 let parse (x:string) =
  match Int32.TryParse(x) with
  |(true,int) -> int
