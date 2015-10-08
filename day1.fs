@@ -19,7 +19,9 @@ let main (max:int) (s:string) =
   |>List.ofSeq
   |>List.sortBy fst
  if List.length l > max then printfn "入力エラー" else l|>List.iter (fun x -> printfn "%dは%dグループあります" (fst x) (Seq.length (snd x)));; 
- 
+
+main 3 "1,1,2,3,3,3,2,1,2";;
+
 let main2 =
  printfn "何種類の整数を使いますか？"
  let max = parse (Console.ReadLine())
@@ -32,3 +34,5 @@ let main2 =
   |>Seq.sortBy fst
  if Seq.length l > max then printfn "入力エラー"
   else l|>Seq.iter (fun x -> printfn "%dは%dグループあります" (fst x) (Seq.length (snd x)));; 
+
+main;;
