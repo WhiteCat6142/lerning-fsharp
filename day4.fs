@@ -12,6 +12,6 @@ let main =
   |>Seq.iter (printfn "%d")
 
 
-/*
+(*
 http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0001&lang=jp
-*/
+*)
